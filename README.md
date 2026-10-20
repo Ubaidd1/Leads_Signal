@@ -13,7 +13,7 @@ A professional interactive prototype for a Remote Hiring Lead Intelligence Platf
 
 ## Styling rule
 
-There is **no custom global CSS** in this project. The only stylesheet is `app/tailwind.css`, which contains only the required Tailwind directives:
+There is **no custom global CSS** in this project. The only stylesheet is `src/app/tailwind.css`, which contains only the required Tailwind directives:
 
 ```css
 @tailwind base;
@@ -26,45 +26,46 @@ All component and page styling is done with Tailwind utility classes in JSX.
 ## Professional structure
 
 ```text
-app/
-  (auth)/
-    login/page.js
-    onboarding/page.js
-  (platform)/
+src/
+  app/
+    (auth)/
+      login/page.js
+      onboarding/page.js
+    (platform)/
+      layout.js
+      dashboard/page.js
+      leads/page.js
+      leads/[id]/page.js
+      companies/page.js
+      companies/[id]/page.js
+      search/new/page.js
+      saved-searches/page.js
+      saved-searches/[id]/page.js
+      alerts/page.js
+      exports/page.js
+      analytics/page.js
+      settings/
+        page.js
+        profile/page.js
+        workspace/page.js
+        integrations/page.js
+        data-sources/page.js
+    api/
+      leads/
+      companies/
+      saved-searches/
+      alerts/
+      exports/
     layout.js
-    dashboard/page.js
-    leads/page.js
-    leads/[id]/page.js
-    companies/page.js
-    companies/[id]/page.js
-    search/new/page.js
-    saved-searches/page.js
-    saved-searches/[id]/page.js
-    alerts/page.js
-    exports/page.js
-    analytics/page.js
-    settings/
-      page.js
-      profile/page.js
-      workspace/page.js
-      integrations/page.js
-      data-sources/page.js
-  api/
+    page.js
+    tailwind.css
+  components/
+    layout/
     leads/
-    companies/
-    saved-searches/
-    alerts/
-    exports/
-  layout.js
-  page.js
-  tailwind.css
-components/
-  layout/
-  leads/
-  providers/
-  ui/
-data/
-lib/
+    providers/
+    ui/
+  data/
+  lib/
 ```
 
 ## Run
